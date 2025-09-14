@@ -1,8 +1,8 @@
 # LiveOrigin
-    实时显示http请求坐标
+    实时显示http请求来源坐标
 
-    ![Peek 2025-09-14 17-59.gif](./images/where_from.gif)
-
+![Peek 2025-09-14 17-59.gif](https://raw.githubusercontent.com/houxinlin/live-origin/refs/heads/main/service/images/where_from.gif)
+    
 # 编译
 
     1. git submodule update --init --recursive
