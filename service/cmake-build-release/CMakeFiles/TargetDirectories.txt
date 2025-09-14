@@ -1,0 +1,3 @@
+/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-release/CMakeFiles/where_from.dir
+/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-release/CMakeFiles/edit_cache.dir
+/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-release/CMakeFiles/rebuild_cache.dir

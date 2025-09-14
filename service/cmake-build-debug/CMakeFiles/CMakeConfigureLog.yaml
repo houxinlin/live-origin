@@ -1,0 +1,1117 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.12.4-1-MANJARO - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-As5qH8"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-As5qH8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-As5qH8'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_f0f31
+        [1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o -c /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.1 20240910 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0f31.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/cc1 -quiet -v /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f0f31.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccDNv1aT.s
+        GNU C17 (GCC) version 14.2.1 20240910 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 14.2.1 20240910, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 91e980a230f7d2e39f93577991713edd
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0f31.dir/'
+         as -v --64 -o CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o /tmp/ccDNv1aT.s
+        GNU assembler version 2.43.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.43.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o -o cmTC_f0f31   && :
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.1 20240910 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f0f31' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f0f31.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgqztBg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f0f31 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crtn.o
+        collect2 version 14.2.1 20240910
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgqztBg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f0f31 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.43.0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f0f31' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f0f31.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-As5qH8']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_f0f31]
+        ignore line: [[1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o -c /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.1 20240910 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0f31.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/cc1 -quiet -v /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f0f31.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccDNv1aT.s]
+        ignore line: [GNU C17 (GCC) version 14.2.1 20240910 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.1 20240910  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 91e980a230f7d2e39f93577991713edd]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0f31.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o /tmp/ccDNv1aT.s]
+        ignore line: [GNU assembler version 2.43.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.43.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /usr/bin/cc  -v -Wl -v CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o -o cmTC_f0f31   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.1 20240910 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f0f31' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f0f31.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgqztBg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f0f31 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccgqztBg.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f0f31] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 14.2.1 20240910]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgqztBg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f0f31 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_f0f31.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.43.0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_stdc89"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tUTS9Z"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tUTS9Z"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "FLAG_SUPPORTED_stdc89"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tUTS9Z'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_b0374
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_stdc89  -fdiagnostics-color=always   -std=c89 -o CMakeFiles/cmTC_b0374.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tUTS9Z/src.c
+        [2/2] : && /usr/bin/cc  -rdynamic CMakeFiles/cmTC_b0374.dir/src.c.o -o cmTC_b0374   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_pedantic"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L9LvlI"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L9LvlI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89"
+    buildResult:
+      variable: "FLAG_SUPPORTED_pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L9LvlI'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_a1079
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_pedantic  -std=c89  -fdiagnostics-color=always   -pedantic -o CMakeFiles/cmTC_a1079.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L9LvlI/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -rdynamic CMakeFiles/cmTC_a1079.dir/src.c.o -o cmTC_a1079   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wall"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DEtFLX"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DEtFLX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DEtFLX'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_3a4c2
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wall  -std=c89 -pedantic  -fdiagnostics-color=always   -Wall -o CMakeFiles/cmTC_3a4c2.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DEtFLX/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -rdynamic CMakeFiles/cmTC_3a4c2.dir/src.c.o -o cmTC_3a4c2   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wextra"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0D1nc0"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0D1nc0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0D1nc0'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_96a67
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wextra  -std=c89 -pedantic -Wall  -fdiagnostics-color=always   -Wextra -o CMakeFiles/cmTC_96a67.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0D1nc0/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -rdynamic CMakeFiles/cmTC_96a67.dir/src.c.o -o cmTC_96a67   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Werror"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IZFiqA"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IZFiqA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Werror"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IZFiqA'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_f5000
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Werror  -std=c89 -pedantic -Wall -Wextra  -fdiagnostics-color=always   -Werror -o CMakeFiles/cmTC_f5000.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IZFiqA/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -rdynamic CMakeFiles/cmTC_f5000.dir/src.c.o -o cmTC_f5000   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wstrictprototypes"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NrdVCN"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NrdVCN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wstrictprototypes"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NrdVCN'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_1bcbe
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wstrictprototypes  -std=c89 -pedantic -Wall -Wextra -Werror  -fdiagnostics-color=always   -Wstrict-prototypes -o CMakeFiles/cmTC_1bcbe.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NrdVCN/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -rdynamic CMakeFiles/cmTC_1bcbe.dir/src.c.o -o cmTC_1bcbe   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wwritestrings"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ptEoJQ"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ptEoJQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wwritestrings"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ptEoJQ'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_a46a5
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wwritestrings  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes  -fdiagnostics-color=always   -Wwrite-strings -o CMakeFiles/cmTC_a46a5.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ptEoJQ/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -rdynamic CMakeFiles/cmTC_a46a5.dir/src.c.o -o cmTC_a46a5   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wshadow"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MI6nXy"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MI6nXy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MI6nXy'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_f95f9
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wshadow  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings  -fdiagnostics-color=always   -Wshadow -o CMakeFiles/cmTC_f95f9.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MI6nXy/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -rdynamic CMakeFiles/cmTC_f95f9.dir/src.c.o -o cmTC_f95f9   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Winitself"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kdah2k"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kdah2k"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Winitself"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kdah2k'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_b608c
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Winitself  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow  -fdiagnostics-color=always   -Winit-self -o CMakeFiles/cmTC_b608c.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kdah2k/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -rdynamic CMakeFiles/cmTC_b608c.dir/src.c.o -o cmTC_b608c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wcastalign"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sE9TIA"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sE9TIA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wcastalign"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sE9TIA'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_149f2
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wcastalign  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self  -fdiagnostics-color=always   -Wcast-align -o CMakeFiles/cmTC_149f2.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sE9TIA/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -rdynamic CMakeFiles/cmTC_149f2.dir/src.c.o -o cmTC_149f2   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wformat2"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mpXqZ7"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mpXqZ7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wformat2"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mpXqZ7'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_ab202
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wformat2  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align  -fdiagnostics-color=always   -Wformat=2 -o CMakeFiles/cmTC_ab202.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mpXqZ7/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -rdynamic CMakeFiles/cmTC_ab202.dir/src.c.o -o cmTC_ab202   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wmissingprototypes"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-eiVx86"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-eiVx86"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wmissingprototypes"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-eiVx86'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_85a31
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wmissingprototypes  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2  -fdiagnostics-color=always   -Wmissing-prototypes -o CMakeFiles/cmTC_85a31.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-eiVx86/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -rdynamic CMakeFiles/cmTC_85a31.dir/src.c.o -o cmTC_85a31   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wstrictoverflow2"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u6ofk2"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u6ofk2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wstrictoverflow2"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u6ofk2'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_280f6
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wstrictoverflow2  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes  -fdiagnostics-color=always   -Wstrict-overflow=2 -o CMakeFiles/cmTC_280f6.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u6ofk2/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -rdynamic CMakeFiles/cmTC_280f6.dir/src.c.o -o cmTC_280f6   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wcastqual"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Bf2xq0"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Bf2xq0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wcastqual"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Bf2xq0'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_d25b2
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wcastqual  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2  -fdiagnostics-color=always   -Wcast-qual -o CMakeFiles/cmTC_d25b2.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Bf2xq0/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -rdynamic CMakeFiles/cmTC_d25b2.dir/src.c.o -o cmTC_d25b2   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wundef"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jxIQES"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jxIQES"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wundef"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jxIQES'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_b0ecd
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wundef  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual  -fdiagnostics-color=always   -Wundef -o CMakeFiles/cmTC_b0ecd.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jxIQES/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -rdynamic CMakeFiles/cmTC_b0ecd.dir/src.c.o -o cmTC_b0ecd   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wswitchdefault"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-U3cTmt"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-U3cTmt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wswitchdefault"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-U3cTmt'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_cdaf0
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wswitchdefault  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef  -fdiagnostics-color=always   -Wswitch-default -o CMakeFiles/cmTC_cdaf0.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-U3cTmt/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -rdynamic CMakeFiles/cmTC_cdaf0.dir/src.c.o -o cmTC_cdaf0   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wconversion"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qncjMa"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qncjMa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wconversion"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qncjMa'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_51919
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wconversion  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default  -fdiagnostics-color=always   -Wconversion -o CMakeFiles/cmTC_51919.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qncjMa/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -rdynamic CMakeFiles/cmTC_51919.dir/src.c.o -o cmTC_51919   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wccompat"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wy4vlg"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wy4vlg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wccompat"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wy4vlg'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_3fb44
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wccompat  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion  -fdiagnostics-color=always   -Wc++-compat -o CMakeFiles/cmTC_3fb44.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Wy4vlg/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -rdynamic CMakeFiles/cmTC_3fb44.dir/src.c.o -o cmTC_3fb44   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_fstackprotectorstrong"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9qGFKn"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9qGFKn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat"
+    buildResult:
+      variable: "FLAG_SUPPORTED_fstackprotectorstrong"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9qGFKn'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_fba86
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_fstackprotectorstrong  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat  -fdiagnostics-color=always   -fstack-protector-strong -o CMakeFiles/cmTC_fba86.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9qGFKn/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -rdynamic CMakeFiles/cmTC_fba86.dir/src.c.o -o cmTC_fba86   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wcomma"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjPQUG"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjPQUG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wcomma"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjPQUG'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_d9ca8
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wcomma  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong  -fdiagnostics-color=always   -Wcomma -o CMakeFiles/cmTC_d9ca8.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjPQUG/src.c
+        FAILED: CMakeFiles/cmTC_d9ca8.dir/src.c.o 
+        /usr/bin/cc -DFLAG_SUPPORTED_Wcomma  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong  -fdiagnostics-color=always   -Wcomma -o CMakeFiles/cmTC_d9ca8.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NjPQUG/src.c
+        cc: error: unrecognized command-line option '-Wcomma'; did you mean '-Wcomment'?
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wdoublepromotion"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Q5E7uk"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Q5E7uk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wdoublepromotion"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Q5E7uk'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_b8718
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wdoublepromotion  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong  -fdiagnostics-color=always   -Wdouble-promotion -o CMakeFiles/cmTC_b8718.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Q5E7uk/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -rdynamic CMakeFiles/cmTC_b8718.dir/src.c.o -o cmTC_b8718   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wparentheses"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g1rH2p"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g1rH2p"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wparentheses"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g1rH2p'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_b5828
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wparentheses  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion  -fdiagnostics-color=always   -Wparentheses -o CMakeFiles/cmTC_b5828.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-g1rH2p/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -rdynamic CMakeFiles/cmTC_b5828.dir/src.c.o -o cmTC_b5828   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wformatoverflow"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-OPuiE0"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-OPuiE0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wformatoverflow"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-OPuiE0'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_53e52
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wformatoverflow  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses  -fdiagnostics-color=always   -Wformat-overflow -o CMakeFiles/cmTC_53e52.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-OPuiE0/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -rdynamic CMakeFiles/cmTC_53e52.dir/src.c.o -o cmTC_53e52   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wunusedmacros"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9n7ATf"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9n7ATf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wunusedmacros"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9n7ATf'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_ff9df
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wunusedmacros  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow  -fdiagnostics-color=always   -Wunused-macros -o CMakeFiles/cmTC_ff9df.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9n7ATf/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -rdynamic CMakeFiles/cmTC_ff9df.dir/src.c.o -o cmTC_ff9df   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wmissingvariabledeclarations"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-P5eEGX"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-P5eEGX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wmissingvariabledeclarations"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-P5eEGX'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_59775
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wmissingvariabledeclarations  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros  -fdiagnostics-color=always   -Wmissing-variable-declarations -o CMakeFiles/cmTC_59775.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-P5eEGX/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -rdynamic CMakeFiles/cmTC_59775.dir/src.c.o -o cmTC_59775   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wusedbutmarkedunused"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7rD3KM"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7rD3KM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wusedbutmarkedunused"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7rD3KM'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_64eff
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wusedbutmarkedunused  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations  -fdiagnostics-color=always   -Wused-but-marked-unused -o CMakeFiles/cmTC_64eff.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7rD3KM/src.c
+        FAILED: CMakeFiles/cmTC_64eff.dir/src.c.o 
+        /usr/bin/cc -DFLAG_SUPPORTED_Wusedbutmarkedunused  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations  -fdiagnostics-color=always   -Wused-but-marked-unused -o CMakeFiles/cmTC_64eff.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7rD3KM/src.c
+        cc: error: unrecognized command-line option '-Wused-but-marked-unused'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wswitchenum"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yqMmuS"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yqMmuS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wswitchenum"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yqMmuS'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_ba18d
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_Wswitchenum  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations  -fdiagnostics-color=always   -Wswitch-enum -o CMakeFiles/cmTC_ba18d.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yqMmuS/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -rdynamic CMakeFiles/cmTC_ba18d.dir/src.c.o -o cmTC_ba18d   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "lib/cJSON/CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_fvisibilityhidden"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WWScm4"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WWScm4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum"
+    buildResult:
+      variable: "FLAG_SUPPORTED_fvisibilityhidden"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WWScm4'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_ef5b5
+        [1/2] /usr/bin/cc -DFLAG_SUPPORTED_fvisibilityhidden  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum  -fdiagnostics-color=always   -fvisibility=hidden -o CMakeFiles/cmTC_ef5b5.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WWScm4/src.c
+        [2/2] : && /usr/bin/cc -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wmissing-variable-declarations -Wswitch-enum -rdynamic CMakeFiles/cmTC_ef5b5.dir/src.c.o -o cmTC_ef5b5   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:251 (check_include_file)"
+      - "lib/libmaxminddb/CMakeLists.txt:23 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NvyMgD"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NvyMgD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NvyMgD'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_bd237
+        [1/2] /usr/bin/cc   -std=c99 -fdiagnostics-color=always -o CMakeFiles/cmTC_bd237.dir/CheckIncludeFile.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NvyMgD/CheckIncludeFile.c
+        [2/2] : && /usr/bin/cc   CMakeFiles/cmTC_bd237.dir/CheckIncludeFile.c.o -o cmTC_bd237   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "lib/libmaxminddb/CMakeLists.txt:23 (check_type_size)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MGftLY"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MGftLY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MGftLY'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_81fc7
+        [1/2] /usr/bin/cc   -std=c99 -fdiagnostics-color=always -o CMakeFiles/cmTC_81fc7.dir/CheckIncludeFile.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MGftLY/CheckIncludeFile.c
+        [2/2] : && /usr/bin/cc   CMakeFiles/cmTC_81fc7.dir/CheckIncludeFile.c.o -o cmTC_81fc7   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:253 (check_include_file)"
+      - "lib/libmaxminddb/CMakeLists.txt:23 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3ERloc"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3ERloc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3ERloc'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_c45c7
+        [1/2] /usr/bin/cc   -std=c99 -fdiagnostics-color=always -o CMakeFiles/cmTC_c45c7.dir/CheckIncludeFile.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3ERloc/CheckIncludeFile.c
+        [2/2] : && /usr/bin/cc   CMakeFiles/cmTC_c45c7.dir/CheckIncludeFile.c.o -o cmTC_c45c7   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "lib/libmaxminddb/CMakeLists.txt:23 (check_type_size)"
+    checks:
+      - "Check size of unsigned __int128"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oNMr9t"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oNMr9t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_UINT128"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oNMr9t'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_e3edf
+        [1/2] /usr/bin/cc   -std=c99 -fdiagnostics-color=always -o CMakeFiles/cmTC_e3edf.dir/UINT128.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oNMr9t/UINT128.c
+        [2/2] : && /usr/bin/cc   CMakeFiles/cmTC_e3edf.dir/UINT128.c.o -o cmTC_e3edf   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "lib/libmaxminddb/CMakeLists.txt:24 (check_type_size)"
+    checks:
+      - "Check size of unsigned int __attribute__((mode(TI)))"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cwwN9k"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cwwN9k"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_UINT128_USING_MODE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cwwN9k'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_856ba
+        [1/2] /usr/bin/cc   -std=c99 -fdiagnostics-color=always -o CMakeFiles/cmTC_856ba.dir/UINT128_USING_MODE.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cwwN9k/UINT128_USING_MODE.c
+        [2/2] : && /usr/bin/cc   CMakeFiles/cmTC_856ba.dir/UINT128_USING_MODE.c.o -o cmTC_856ba   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "lib/libmaxminddb/t/CMakeLists.txt:29 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-auJwWY"
+      binary: "/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-auJwWY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-auJwWY'
+        
+        Run Build Command(s): /home/LinuxWork/app/developer-apps/clion-2024.3.3/bin/ninja/linux/x64/ninja -v cmTC_ad141
+        [1/2] /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -fdiagnostics-color=always -o CMakeFiles/cmTC_ad141.dir/src.c.o -c /home/LinuxWork/project/c/LiveOrigin/service/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-auJwWY/src.c
+        [2/2] : && /usr/bin/cc  -rdynamic CMakeFiles/cmTC_ad141.dir/src.c.o -o cmTC_ad141   && :
+        
+      exitCode: 0
+...

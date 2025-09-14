@@ -1,0 +1,9 @@
+[submodule "service/lib/cJSON"]
+	path = service/lib/cJSON
+	url = https://github.com/DaveGamble/cJSON.git
+[submodule "service/lib/wssocket"]
+	path = service/lib/wssocket
+	url = https://github.com/Theldus/wsServer.git
+[submodule "service/lib/libmaxminddb"]
+	path = service/lib/libmaxminddb
+	url = https://github.com/maxmind/libmaxminddb

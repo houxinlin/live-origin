@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/basic_lookup_t.dir/link.d CMakeFiles/basic_lookup_t.dir/basic_lookup_t.c.o CMakeFiles/basic_lookup_t.dir/maxminddb_test_helper.c.o -o basic_lookup_t  ../libmaxminddb.a libtap.a -lm

@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/no_map_get_value_t.dir/link.d CMakeFiles/no_map_get_value_t.dir/no_map_get_value_t.c.o CMakeFiles/no_map_get_value_t.dir/maxminddb_test_helper.c.o -o no_map_get_value_t  ../libmaxminddb.a libtap.a -lm

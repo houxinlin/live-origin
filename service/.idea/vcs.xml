@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/cJSON" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/libmaxminddb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/libmaxminddb/t/libtap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/libmaxminddb/t/maxmind-db" vcs="Git" />
+  </component>
+</project>

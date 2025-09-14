@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+339a23bd563e61a9e3c127e51964160a lib/cJSON/CMakeFiles/check
+e54aef4c6f655b56981c597d071e8260 lib/cJSON/CMakeFiles/uninstall

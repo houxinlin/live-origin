@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/version_t.dir/link.d CMakeFiles/version_t.dir/version_t.c.o CMakeFiles/version_t.dir/maxminddb_test_helper.c.o -o version_t  ../libmaxminddb.a libtap.a -lm

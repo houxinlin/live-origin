@@ -1,0 +1,36 @@
+cmake_minimum_required(VERSION 3.30)
+project(where_from C)
+
+
+set(CMAKE_C_STANDARD 11)
+
+include_directories(lib/cJSON lib/libmaxminddb/include)
+
+link_directories(lib/cJSON/build lib/libmaxminddb/build)
+
+add_executable(where_from
+        capture.c
+        main.c
+        http_parser.c
+        ip_converter.c
+        ip_converter.h
+
+        # WebSocket related files
+        ws/base64.c
+        ws/base64.h
+        ws/handshake.c
+        ws/sha1.c
+        ws/sha1.h
+        ws/utf8.c
+        ws/utf8.h
+        ws/ws.c
+        ws/ws.h
+        ws_manager.c
+        ws_manager.h
+        context.h
+        context.c)
+
+
+target_include_directories(where_from PRIVATE /usr/include)
+target_link_libraries(where_from PRIVATE pcap curl libcjson.a maxminddb)
+

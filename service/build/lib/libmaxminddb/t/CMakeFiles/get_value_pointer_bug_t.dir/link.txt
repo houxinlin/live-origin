@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/get_value_pointer_bug_t.dir/link.d CMakeFiles/get_value_pointer_bug_t.dir/get_value_pointer_bug_t.c.o CMakeFiles/get_value_pointer_bug_t.dir/maxminddb_test_helper.c.o -o get_value_pointer_bug_t  ../libmaxminddb.a libtap.a -lm

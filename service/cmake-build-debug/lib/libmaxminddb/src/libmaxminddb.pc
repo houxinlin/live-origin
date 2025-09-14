@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+libdir=lib
+includedir=include
+
+Name: libmaxminddb
+Description: C library for the MaxMind DB file format
+URL: https://maxmind.github.io/libmaxminddb/
+Version: 1.12.2
+Libs: -L${libdir} -lmaxminddb
+Cflags: -I${includedir}

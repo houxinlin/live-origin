@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/ipv6_lookup_in_ipv4_t.dir/link.d CMakeFiles/ipv6_lookup_in_ipv4_t.dir/ipv6_lookup_in_ipv4_t.c.o CMakeFiles/ipv6_lookup_in_ipv4_t.dir/maxminddb_test_helper.c.o -o ipv6_lookup_in_ipv4_t  ../libmaxminddb.a libtap.a -lm

@@ -1,0 +1,96 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/libmaxminddb/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 96,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 100,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 155,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libmaxminddb/libmaxminddb.a"
+			],
+			"targetId" : "maxminddb::@62b9576752e0152c8d7d",
+			"targetIndex" : 17,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"lib/libmaxminddb/include/maxminddb.h",
+				"cmake-build-debug/lib/libmaxminddb/generated/maxminddb_config.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/maxminddb",
+			"exportName" : "maxminddb",
+			"exportTargets" : 
+			[
+				{
+					"id" : "maxminddb::@62b9576752e0152c8d7d",
+					"index" : 17
+				}
+			],
+			"paths" : 
+			[
+				"lib/libmaxminddb/CMakeFiles/Export/765d6013118cca6c861889119fcce4f5/maxminddb-config.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"cmake-build-debug/lib/libmaxminddb/src/libmaxminddb.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/libmaxminddb",
+		"source" : "lib/libmaxminddb"
+	}
+}
