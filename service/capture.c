@@ -20,48 +20,26 @@ typedef struct {
 uint32_t snaplen = 65535, promisc = 1, to = 100;
 uint8_t quiet = 0;
 void (*ip_callback)(char *ip);
-char *usedev = NULL;
-uint16_t port = 8080;
-char *proxy_header="aa";
 
 char pc_err[PCAP_ERRBUF_SIZE];
 uint8_t link_offset;
 pcap_t *pd = NULL;
 struct in_addr net, mask;
+static application_context_t *application_context;
 
-
-int run_capture(void (*callback)(char *ip), int argc, char **argv) {
+int run_capture(void (*callback)(char *ip),application_context_t *context) {
+    application_context = context;
     ip_callback = callback;
-    int32_t c;
 
     signal(SIGINT, clean_exit);
     signal(SIGQUIT, clean_exit);
     signal(SIGPIPE, clean_exit);
 
-    while ((c = getopt(argc, argv, "d:p:h:")) != EOF) {
-        switch (c) {
-            case 'd':
-                usedev = optarg;
-                break;
-            case 'h': {
-                proxy_header = optarg;
-            }
-            case 'p': {
-                uint16_t value = atoi(optarg);
-                if (value > 0)
-                    port = value;
-            }
-            break;
-            default:
-                usage();
-        }
-    }
-
-    if (setup_pcap_source())
+    if (setup_pcap_source(application_context))
         clean_exit(2);
 
     char filter_exp[64];
-    snprintf(filter_exp, sizeof(filter_exp), "tcp port %u", port);
+    snprintf(filter_exp, sizeof(filter_exp), "tcp port %u", application_context->port);
     struct bpf_program fp;
 
     // 编译 BPF
@@ -81,8 +59,9 @@ int run_capture(void (*callback)(char *ip), int argc, char **argv) {
     return 0;
 }
 
-int setup_pcap_source(void) {
-    char *dev = usedev ? usedev : pcap_lookupdev(pc_err);
+int setup_pcap_source(application_context_t *application_context) {
+    char *use_dev=application_context->use_dev;
+    char *dev = use_dev ? use_dev : pcap_lookupdev(pc_err);
 
     if (!dev) {
         perror(pc_err);
@@ -184,9 +163,8 @@ int on_header_field_cb(http_parser *parser, const char *at, size_t length) {
 
 int on_header_value_cb(http_parser *parser, const char *at, size_t length) {
     parse_ip_address_t *context = (parse_ip_address_t *)parser->data;
-    
     if (context->current_header_field &&
-        strcasecmp(context->current_header_field, proxy_header) == 0) {
+        strcasecmp(context->current_header_field, application_context->proxy_header) == 0) {
         
         if (context->ip_address) {
             free(context->ip_address);
@@ -219,7 +197,7 @@ void print_current_time(void) {
 
 void dump_packet(struct pcap_pkthdr *h, u_char *p, uint8_t proto, unsigned char *data, uint32_t len,
                  const char *ip_src, const char *ip_dst, uint16_t sport, uint16_t dport) {
-    if (len == 0 || dport != port)
+    if (len == 0 || dport != application_context->port)
         return;
 
     parse_ip_address_t *address = (parse_ip_address_t *) malloc(sizeof(parse_ip_address_t));
@@ -240,7 +218,6 @@ void dump_packet(struct pcap_pkthdr *h, u_char *p, uint8_t proto, unsigned char 
         size_t nparsed = http_parser_execute(&parser, &settings, (const char*)data, len);
     }
 
-    fflush(stdout);
     if (address->ip_address) {
         printf("%s\n",address->ip_address);
         if (!quiet) {
@@ -257,6 +234,7 @@ void dump_packet(struct pcap_pkthdr *h, u_char *p, uint8_t proto, unsigned char 
     if (address->ip_address) {
         free(address->ip_address);
     }
+    fflush(stdout);
     free(address);
 }
 

@@ -3,7 +3,7 @@
 #include <stdint.h>
 #define VERSION "1.47.1-git"
 #include <pcap.h>
-
+#include "context.h"
 
 #define ETHHDR_SIZE 14
 #define TOKENRING_SIZE 22
@@ -65,9 +65,9 @@ typedef enum {
     TCP = 'T', UDP = 'U', ICMP = 'I', ICMPv6 = 'I', IGMP = 'G', UNKNOWN = '?'
 } netident_t;
 
-int  run_capture(void (*func_ptr)(char *ip) ,int argc, char **argv);
+int  run_capture(void (*func_ptr)(char *ip),application_context_t *application_context);
 
-int setup_pcap_source(void);
+int setup_pcap_source(application_context_t *application_context);
 void process(u_char *, struct pcap_pkthdr *, u_char *);
 
 void usage(void);

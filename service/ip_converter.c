@@ -156,7 +156,7 @@ lat_long* get_lat_long_from_api(char *ip, api_type_t api_type) {
     response.memory = malloc(1);
     response.size = 0;
     snprintf(url, sizeof(url), ip_urls[api_type], ip);
-    printf("use server: %s\n",url);
+    printf("ip服务提供URL=: %s\n",url);
     curl = curl_easy_init();
     if (!curl) {
         free(response.memory);
@@ -289,7 +289,6 @@ lat_long* get_lat_long_from_mmdb(const char *ip) {
 lat_long* get_lat_long(char *ip) {
     lat_long *result = NULL;
     printf("开始获取IP %s 的地理位置信息...\n", ip);
-    // result = get_lat_long_from_mmdb(ip);
     srand(time(NULL));
     int r = rand() % API_COUNT;
     api_type_t api = (api_type_t)r;
