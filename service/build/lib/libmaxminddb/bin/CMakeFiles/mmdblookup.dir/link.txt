@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/mmdblookup.dir/link.d CMakeFiles/mmdblookup.dir/mmdblookup.c.o -o mmdblookup  ../libmaxminddb.a -lpthread

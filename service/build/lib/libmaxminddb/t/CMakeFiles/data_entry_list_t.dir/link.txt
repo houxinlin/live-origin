@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/data_entry_list_t.dir/link.d CMakeFiles/data_entry_list_t.dir/data_entry_list_t.c.o CMakeFiles/data_entry_list_t.dir/maxminddb_test_helper.c.o -o data_entry_list_t  ../libmaxminddb.a libtap.a -lm

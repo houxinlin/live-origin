@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/bad_pointers_t.dir/link.d CMakeFiles/bad_pointers_t.dir/bad_pointers_t.c.o CMakeFiles/bad_pointers_t.dir/maxminddb_test_helper.c.o -o bad_pointers_t  ../libmaxminddb.a libtap.a -lm

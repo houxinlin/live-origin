@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/threads_t.dir/link.d CMakeFiles/threads_t.dir/threads_t.c.o CMakeFiles/threads_t.dir/maxminddb_test_helper.c.o -o threads_t  ../libmaxminddb.a libtap.a -lm

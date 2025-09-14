@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/metadata_pointers_t.dir/link.d CMakeFiles/metadata_pointers_t.dir/metadata_pointers_t.c.o CMakeFiles/metadata_pointers_t.dir/maxminddb_test_helper.c.o -o metadata_pointers_t  ../libmaxminddb.a libtap.a -lm

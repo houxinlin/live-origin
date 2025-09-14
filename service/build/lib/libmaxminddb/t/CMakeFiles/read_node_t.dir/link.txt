@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/read_node_t.dir/link.d CMakeFiles/read_node_t.dir/read_node_t.c.o CMakeFiles/read_node_t.dir/maxminddb_test_helper.c.o -o read_node_t  ../libmaxminddb.a libtap.a -lm

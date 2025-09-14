@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/bad_databases_t.dir/link.d CMakeFiles/bad_databases_t.dir/bad_databases_t.c.o CMakeFiles/bad_databases_t.dir/maxminddb_test_helper.c.o -o bad_databases_t  ../libmaxminddb.a libtap.a -lm

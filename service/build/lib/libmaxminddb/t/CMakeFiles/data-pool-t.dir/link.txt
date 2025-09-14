@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/data-pool-t.dir/link.d "CMakeFiles/data-pool-t.dir/data-pool-t.c.o" "CMakeFiles/data-pool-t.dir/maxminddb_test_helper.c.o" -o data-pool-t  ../libmaxminddb.a libtap.a -lm
